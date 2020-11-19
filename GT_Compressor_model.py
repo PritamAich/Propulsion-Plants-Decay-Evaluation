@@ -46,7 +46,7 @@ scaler = StandardScaler()
 x_train_scaled = scaler.fit_transform(x_train)
 x_val_scaled = scaler.transform(x_val)
 x_test_scaled = scaler.transform(x_test) 
-
+y
 
 #CatBoost Model creation
 from catboost import CatBoostRegressor
@@ -80,6 +80,7 @@ if scaler_auth == "Y" or scaler_auth == "y":
     #Saving Scaler object
     filehandler = open('scaler_GT_Compressor.pickle', 'wb') 
     pickle.dump(scaler, filehandler)
+    filehandler.close()
     print("Scaler object saved.")
 
 model_auth = input("Do you want to save the model? (Y/N)")
@@ -88,4 +89,5 @@ if model_auth == "Y" or model_auth == "y":
     #Saving the CatBoost model object
     filehandler = open('CatBoostRegressor_GT_Compressor.pickle', 'wb') 
     pickle.dump(cb, filehandler)
+    filehandler.close()
     print("Model object saved.")
