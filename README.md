@@ -31,7 +31,7 @@ Achieved an RMSE(root-mean squared error) score of 0.000844 for our Compressor m
 
 - scaler_GT_Turbine.pickle: Pickle file of the scaler object for the Turbine model
 
-Model_Comparison_GT_Compressor.csv: CSV file that contains the comparison chart of all the models tested for the Compressor decay state coefficient
+- Model_Comparison_GT_Compressor.csv: CSV file that contains the comparison chart of all the models tested for the Compressor decay state coefficient
 
 - Model_Comparison_GT_Turbine.csv: CSV file that contains the comparison chart of all the models tested for the Turbine decay state coefficient.
 
