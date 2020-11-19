@@ -15,9 +15,9 @@ Achieved an RMSE(root-mean squared error) score of 0.000844 for our Compressor m
 
 ## **File description:**
 
-- ML model creation and evaluation(GT Compressor).ipynb: The Jupyter notebook where 7 different ML models were evaluated for the GT Compressor decay state coefficient.
+- (GT Compressor)ML model creation and evaluation.ipynb: The Jupyter notebook where 7 different ML models were evaluated for the GT Compressor decay state coefficient.
 
-- ML model creation and evaluation(GT Turbine).ipynb: The Jupyter notebook where 7 different ML models were evaluated for the GT Turbine decay state coefficient.
+- (GT Turbine)ML model creation and evaluation.ipynb: The Jupyter notebook where 7 different ML models were evaluated for the GT Turbine decay state coefficient.
 
 - Testing_Model_performance.ipynb: The Jupyter notebook to test the model performance on new data.
 
