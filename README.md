@@ -19,9 +19,11 @@ Achieved an RMSE(root-mean squared error) score of 0.000844 for our Compressor m
 
 - ML model creation and evaluation(GT Turbine).ipynb: The Jupyter notebook where 7 different ML models were evaluated for the GT Turbine decay state coefficient.
 
+- Testing_Model_performance.ipynb: The Jupyter notebook to test the model performance on new data.
+
 - GT_Compressor_model.py: Python file to recreate the model, i.e CatBoost(Best performing model with the lowest rmse score) for the Compressor decay state evaluation. 
 
-- GT_Turbine_model.py: Python file to recreate the model, i.e CatBoost(Best performing model with the lowest rmse score) for the Turbine decay state evaluation. 
+- GT_Turbine_model.py: Python file to recreate the model, i.e CatBoost(Best performing model with the lowest rmse score) for the Turbine decay state evaluation.
 
 - CatBoostRegressor_GT_Compressor.pickle: Pickle file of the CatBoost model for Compressor
 
