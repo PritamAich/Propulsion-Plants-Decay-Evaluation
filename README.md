@@ -33,7 +33,7 @@ Achieved an RMSE(root-mean squared error) score of 0.000844 for our Compressor m
 
 - **CatBoostRegressor_GT_Turbine.pickle:** Pickle file of the CatBoost model for Turbine
 
-- **caler_GT_Compressor.pickle:** Pickle file of the scaler object for the Compressor model
+- **scaler_GT_Compressor.pickle:** Pickle file of the scaler object for the Compressor model
 
 - **scaler_GT_Turbine.pickle:** Pickle file of the scaler object for the Turbine model
 
