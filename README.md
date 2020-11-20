@@ -15,27 +15,27 @@ Achieved an RMSE(root-mean squared error) score of 0.000844 for our Compressor m
 
 ## **File description:**
 
-- (GT Compressor)ML model creation and evaluation.ipynb: The Jupyter notebook where 7 different ML models were evaluated for the GT Compressor decay state coefficient.
+- **(GT Compressor)ML model creation and evaluation.ipynb:** The Jupyter notebook where 7 different ML models were evaluated for the GT Compressor decay state coefficient.
 
-- (GT Turbine)ML model creation and evaluation.ipynb: The Jupyter notebook where 7 different ML models were evaluated for the GT Turbine decay state coefficient.
+- **(GT Turbine)ML model creation and evaluation.ipynb:** The Jupyter notebook where 7 different ML models were evaluated for the GT Turbine decay state coefficient.
 
-- Testing_Model_performance.ipynb: The Jupyter notebook to test the model performance on new data.
+- **Testing_Model_performance.ipynb:** The Jupyter notebook to test the model performance on new data.
 
-- GT_Compressor_model.py: Python file to recreate the model, i.e CatBoost(Best performing model with the lowest rmse score) for the Compressor decay state evaluation. 
+- **GT_Compressor_model.py:** Python file to recreate the model, i.e CatBoost(Best performing model with the lowest rmse score) for the Compressor decay state evaluation. 
 
-- GT_Turbine_model.py: Python file to recreate the model, i.e CatBoost(Best performing model with the lowest rmse score) for the Turbine decay state evaluation.
+- **GT_Turbine_model.py:** Python file to recreate the model, i.e CatBoost(Best performing model with the lowest rmse score) for the Turbine decay state evaluation.
 
-- CatBoostRegressor_GT_Compressor.pickle: Pickle file of the CatBoost model for Compressor
+- **atBoostRegressor_GT_Compressor.pickle:** Pickle file of the CatBoost model for Compressor
 
-- CatBoostRegressor_GT_Turbine.pickle: Pickle file of the CatBoost model for Turbine
+- **CatBoostRegressor_GT_Turbine.pickle:** Pickle file of the CatBoost model for Turbine
 
-- scaler_GT_Compressor.pickle: Pickle file of the scaler object for the Compressor model
+- **caler_GT_Compressor.pickle:** Pickle file of the scaler object for the Compressor model
 
-- scaler_GT_Turbine.pickle: Pickle file of the scaler object for the Turbine model
+- **scaler_GT_Turbine.pickle:** Pickle file of the scaler object for the Turbine model
 
-- Model_Comparison_GT_Compressor.csv: CSV file that contains the comparison chart of all the models tested for the Compressor decay state coefficient
+- **Model_Comparison_GT_Compressor.csv:** CSV file that contains the comparison chart of all the models tested for the Compressor decay state coefficient
 
-- Model_Comparison_GT_Turbine.csv: CSV file that contains the comparison chart of all the models tested for the Turbine decay state coefficient.
+- **Model_Comparison_GT_Turbine.csv:** CSV file that contains the comparison chart of all the models tested for the Turbine decay state coefficient.
 
 ## Resources:
 
