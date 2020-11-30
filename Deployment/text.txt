@@ -1,0 +1,51 @@
+<!-- <form id = 'form'>
+            
+            <label for="lever">Lever position (lp) (Value Range: 1 to 10) </label><br>
+            <input type="number" id="lever" name="lever"><br>
+
+            <label for="speed">Ship speed (v) (Value Range: 0 to 30) </label><br>
+            <input type="number" id="speed" name="speed"><br>
+
+            <label for="turbine_shaft_torque">Gas Turbine shaft torque (GTT) [kN m] (Value Range: 200 to 73000) </label><br>
+            <input type="number" id="turbine_shaft_torque" name="turbine_shaft_torque"><br>
+
+            <label for="turbine_rate">Gas Turbine rate of revolutions (GTn) [rpm] (Value Range: 1000 to 4000) </label><br>
+            <input type="number" id="turbine_rate" name="turbine_rate"><br>
+
+            <label for="generator_rate">Gas Generator rate of revolutions (GGn) [rpm] (Value Range: 6000 to 10000) </label><br>
+            <input type="number" id="generator_rate" name="generator_rateof_revolutions"><br>
+
+            <label for="starboard_propeller">Starboard Propeller Torque (Ts) [kN] (Value Range: 5 to 700) </label><br>
+            <input type="number" id="starboard_propeller" name="starboard_propeller"><br>
+
+            <label for="port_propeller">Port Propeller Torque (Tp) [kN] (Value Range: 5 to 700) </label><br>
+            <input type="number" id="port_propeller" name="port_propeller"><br>
+
+            <label for="turbine_temp">HP Turbine exit temperature (T48) [C] (Value Range: 400 to 1200) </label><br>
+            <input type="number" id="turbine_temp" name="turbine_temp"><br>
+
+            <label for="compressor_inlet_temp">GT Compressor inlet air temperature (T1) [C] (Fixed value: 288) </label><br>
+            <input type="number" id="compressor_inlet_temp" name="compressor_inlet_temp"><br>
+
+            <label for="compressor_outlet_temp">GT Compressor outlet air temperature (T2) [C] (Value Range: 500 to 800) </label><br>
+            <input type="number" id="compressor_outlet_temp" name="compressor_outlet_temp"><br>
+
+            <label for="turbine_exit_pressure">HP Turbine exit pressure (P48) [bar] (Value Range: 1 to 5) </label><br>
+            <input type="number" id="turbine_exit_pressure" name="turbine_exit_pressure"><br>
+
+            <label for="compressor_inlet_pressure">GT Compressor inlet air pressure (P1) [bar] (Value Range: 0 to 1) </label><br>
+            <input type="number" id="compressor_inlet_pressure" name="compressor_inlet_pressure"><br>
+
+            <label for="compressor_outlet_pressure">GT Compressor outlet air pressure (P2) [bar] (Value Range: 5 to 25) </label><br>
+            <input type="number" id="compressor_outlet_pressure" name="compressor_outlet_pressure"><br>
+
+            <label for="turbine_exhaust_pressure">Gas Turbine exhaust gas pressure (Pexh) [bar] (Value Range: 1 to 2) </label><br>
+            <input type="number" id="turbine_exhaust_pressure" name="turbine_exhaust_pressure"><br>
+
+            <label for="turbine_injection_control">Turbine Injecton Control (TIC) [%] (Value Range: 0 to 100) </label><br>
+            <input type="number" id="turbine_injection_control" name="turbine_injection_control"><br>
+            
+            <label for="fuel_flow">Fuel flow (mf) [kg/s] (Value Range: 0 to 2) </label><br>
+            <input type="number" id="fuel_flow" name="fuel_flow"><br>
+
+          </form> -->
