@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Propulsion Plants Decay Evaluation
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    
+
+</head>
+
+<body style = "background-color: black">
+
+    <!-- Carousal Start -->
+
+    <div id="carouselInterval" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselInterval" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselInterval" data-slide-to="1"></li>
+            <li data-target="#carouselInterval" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+                <img src="../static/Gas_turbine_image.jpg" class="d-block w-100" height="800">
+                <div class="heading">
+
+                    <h1>
+                        <u>Gas Turbine Compressor and Turbine Decay Rate Evaluation</u>
+                    </h1>
+
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><b>GAS TURBINE</b></h5>
+                        <p class="carousel_info">The basic operation of the gas turbine is a Brayton cycle with air as
+                            the working fluid:
+                            atmospheric air flows through the compressor that brings it to higher pressure; energy is
+                            then added by spraying fuel into the air and igniting it so that the combustion generates a
+                            high-temperature flow; this high-temperature pressurized gas enters a turbine, producing a
+                            shaft work output in the process, used to drive the compressor</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-interval="10000">
+                <img src="../static/GT_image2.jpg" class="d-block w-100" height="800">
+                <div class="heading">
+
+                    <h1>
+                        <u>Gas Turbine Compressor and Turbine Decay Rate Evaluation</u>
+                    </h1>
+
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h2><b>GT Compressor</b></h5>
+                        <p class="carousel_info">Gas turbine engine compressors provide the compression part of the gas
+                            turbine engine
+                            thermodynamic cycle. There are three basic categories of gas turbine engine compressor:
+                            axial compressor, centrifugal compressor and mixed flow compressor.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-interval="10000">
+                <img src="../static/GT_image3.jpg" class="d-block w-100" height="800">
+                <div class="heading">
+
+                    <h1>
+                        <u>Gas Turbine Compressor and Turbine Decay Rate Evaluation</u>
+                    </h1>
+
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="carousel_info">The gas turbine is the engine at the heart of the power plant that produces
+                        electric current. A
+                        gas turbine is a combustion engine that can convert natural gas or other liquid fuels to
+                        mechanical energy. This energy then drives a generator that produces electrical energy.</p>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Carousal End -->
+
+    <div class="about">
+        <h3>
+            <br>
+            <u>About</u>
+        </h3>
+        <br>
+    </div>
+    <div class="short_desc">
+        The combustion (gas) turbines being installed in many of today's natural-gas-fueled power plants are complex
+        machines, but they basically involve three main sections:
+    </div>
+    <br>
+
+    <div class='working_principle'>
+
+        <ul>
+            <li>The <b>Compressor</b>, which draws air into the engine, pressurizes it, and feeds it to the combustion
+                chamber at
+                speeds of hundreds of miles per hour.</li>
+            <li>The <b>Combustion system</b>, typically made up of a ring of fuel injectors that inject a steady stream
+                of fuel
+                into combustion chambers where it mixes with the air. The mixture is burned at temperatures of more than
+                2000
+                degrees F. The combustion produces a high temperature, high pressure gas stream that enters and expands
+                through the
+                turbine section.</li>
+
+            <li>The <b>Turbine</b> is an intricate array of alternate stationary and rotating aerofoil-section blades.
+                As hot
+                combustion gas expands through the turbine, it spins the rotating blades. The rotating blades perform a
+                dual
+                function: they drive the compressor to draw more pressurized air into the combustion section, and they
+                spin
+                a generator to produce electricity.</li>
+        </ul>
+
+    </div>
+
+    <h4>
+        <br>
+        <u>Enter the necessary values of the Propulsion Plant and it will automatically calculate the <b>GT Compressor
+                decay rate coefficient</b> and the <b>GT Turbine decay rate coefficient</b></u>
+        <br>
+    </h4>
+
+    <!-- Form to enter values -->
+    <form id = "form_values" action="../app.py" method="POST">
+
+        <div class="form-row">
+            <div class="col">
+                <label for="lever">Lever position (Value Range: 1 to 10) </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="lever" >
+            </div>
+            <div class="col">
+                <label for="speed">Ship speed (v) (Value Range: 0 to 30) </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" margin required name="speed" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="turbine_shaft_torque">Gas Turbine shaft torque (GTT) [kN m] (Value Range: 200 to 73000)
+                </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="turbine_shaft_torque" >
+            </div>
+            <div class="col">
+                <label for="turbine_rate">Gas Turbine rate of revolutions (GTn) [rpm] (Value Range: 1000 to 4000)
+                </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="turbine_rate" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="generator_rate">Gas Generator rate of revolutions[rpm] (Value Range: 6000 to 10000)
+                </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="generator_rate" >
+            </div>
+            <div class="col">
+                <label for="starboard_propeller">Starboard Propeller Torque (Ts) [kN] (Value Range: 5 to 700)
+                </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="starboard_propeller" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="port_propeller">Port Propeller Torque (Tp) [kN] (Value Range: 5 to 700) </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="port_propeller" >
+            </div>
+            <div class="col">
+                <label for="turbine_temp">HP Turbine exit temperature (T48) [C] (Value Range: 400 to 1200) </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="turbine_temp" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="compressor_inlet_temp">GT Compressor inlet air temperature (T1) [C] (Fixed value: 288)
+                </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="compressor_inlet_temp" >
+            </div>
+            <div class="col">
+                <label for="compressor_outlet_temp">GT Compressor outlet air temperature (T2) [C] (Value Range: 500 to
+                    800) </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="compressor_outlet_temp" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="turbine_exit_pressure">HP Turbine exit pressure (P48) [bar] (Value Range: 1 to 5)
+                </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="turbine_exit_pressure" >
+            </div>
+            <div class="col">
+                <label for="compressor_inlet_pressure">GT Compressor inlet air pressure (P1) [bar] (Value Range: 0 to 1)
+                </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="compressor_inlet_pressure" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="compressor_outlet_pressure">GT Compressor outlet air pressure (P2) [bar] (Value Range: 5 to
+                    25) </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="compressor_outlet_pressure" >
+            </div>
+            <div class="col">
+                <label for="turbine_exhaust_pressure">Gas Turbine exhaust gas pressure (Pexh) [bar] (Value Range: 1 to
+                    2) </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="turbine_exhaust_pressure" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="turbine_injection_control">Turbine Injecton Control (TIC) [%] (Value Range: 0 to 100)
+                </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="turbine_injection_control" >
+            </div>
+            <div class="col">
+                <label for="fuel_flow">Fuel flow rate (mf) [kg/s] (Value Range: 0 to 2) </label><br>
+                <input type="number" class="form-control" placeholder="Enter value" required name="fuel_flow" >
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>    
+
+        <!-- <div class="button">
+            <button type="submit" class="btn btn-primary" inputmode="true" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                Calculate
+            </button>
+        </div> -->
+        <input id = "calculate_button" type="submit" value = "Calculate">
+
+    </form>
+
+  
+    <br>
+    <br>
+    <br>
+    <div class = "output">
+        <label id = "compressor_coefficient">
+
+        </label>
+        <label id = "turbine_coefficient">
+
+        </label>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    
+    
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
